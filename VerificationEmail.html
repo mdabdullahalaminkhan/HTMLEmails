@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notification</title>
+    <style>
+      /* Ensure full width in mobile clients */
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+      }
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin:auto
+      }
+      .content {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .header {
+        background-color: #ffffff;
+        padding: 20px;
+        text-align: center;
+      }
+      .header img {
+        height: 45px;
+        text-align: center;
+      }
+      .body {
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #333333;
+        line-height: 1.5;
+      }
+      .footer {
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        color: #666666;
+        background-color: #ffffff;
+      }
+      .btn {
+        display: inline-block;
+        margin: 10px 0;
+        padding: 10px 20px;
+        background-color: #3586ff;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        text-align: center;
+      }
+      @media only screen and (max-width: 600px) {
+        .body {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table width="100%"  cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td align="center">
+          <table class="content" role="presentation">
+            <!-- Header Section -->
+            <tr>
+              <td class="header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" alt="Company Logo" />
+              </td>
+            </tr>
+            <!-- Body Section -->
+            <tr>
+              <td class="body">
+                <h1 style="font-size: 20px; font-weight: bold; margin-bottom: 15px;">
+                  Notification: Action Required
+                </h1>
+                <p>
+                  Hello <strong>Md Abdullah Al Amin Khan</strong>, 
+                </p>
+                <p>
+                  Thank you for initiating this process. To proceed further, please use the verification code below:
+                </p>
+                <p style="text-align: center; font-size: 36px; font-weight: bold; color: #0073e6;">
+                  123456
+                </p>
+                <p>
+                  If you didn’t request this, you can safely ignore this email.
+                </p>
+                <a href="https://mdabdullahalaminkhan.vercel.app" class="btn">Visit Our Website</a>
+              </td>
+            </tr>
+            <!-- Footer Section -->
+            <tr>
+              <td class="footer">
+                <p>
+                  This is a system-generated email. For any queries, please visit 
+                  <a href="https://mdabdullahalaminkhan.vercel.app" style="color: #0073e6;">our website</a>.
+                </p>
+                <p>&copy; 2025 Dummy Company. All rights reserved.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

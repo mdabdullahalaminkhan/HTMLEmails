@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      color: rgb(0, 0, 0);
+      font-family: 'Arial', sans-serif;
+    }
+
+    .about-me {
+      background-color: #ffffff;
+      padding: 40px;
+      max-width: 800px;
+      margin: 50px auto;
+      border-radius: 8px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      color: #333;
+    }
+
+    .about-me h1 {
+      font-size: 2em;
+      color: #2d3748;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .about-me p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .about-me p br {
+      margin-bottom: 10px;
+    }
+
+    .about-me p span {
+      font-weight: bold;
+      color: #2b6cb0;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 30px;
+      font-size: 1.1em;
+    }
+
+    .contact-info div {
+      flex: 1;
+      margin: 5px 10px;
+    }
+
+    .contact-info a {
+      color: #2b6cb0;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-info a:hover {
+      color: #1a202c;
+    }
+
+    .cta {
+      text-align: center;
+      font-size: 1.2em;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #e53e3e;
+    }
+
+    .html-email {
+      width: 80vw;
+      display: flex;
+      flex-direction: column;
+    }
+
+    iframe {
+      min-width: 80vw;
+      border: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- about me start -->
+  <div class="about-me">
+    <h1>Hi 👋, I’m Md Abdullah Al Amin Khan</h1>
+    <p>
+      A passionate Software Developer and HTML Email Development Expert.<br><br>
+
+      I specialize in creating pixel-perfect, responsive, and cross-client-compatible email templates. These templates
+      are designed to look amazing on all devices and email platforms, ensuring your message reaches your audience in
+      style. Whether it’s for marketing campaigns, newsletters, or transactional emails, I can help you elevate your
+      email communication. <br><br>
+
+      Let’s Build Something Amazing Together! 🚀 Whether you’re a startup or an established brand, I can help you
+      with email templates that boost engagement and drive results.
+    </p>
+
+    <div class="contact-info">
+      <div>
+        <span>🌐 Portfolio:</span><br>
+        <a href="https://mdabdullahalaminkhan.vercel.app" target="_blank">mdabdullahalaminkhan.vercel.app</a>
+      </div>
+      <div>
+        <span>📩 Email:</span><br>
+        <a href="mailto:mdabdullahalaminkhan@gmail.com">mdabdullahalaminkhan@gmail.com</a>
+      </div>
+      <div>
+        <span>📱 Phone:</span><br>
+        <a href="tel:+8801534654019">+8801534654019</a>
+      </div>
+    </div>
+
+    <div class="cta">
+      🚀 **Let’s Build Something Incredible Together!**
+    </div>
+  </div>
+  <!-- about me ends -->
+  <div class="html-email">
+    <div class="title">
+      <h2>Notification Email</h2>
+    </div>
+    <div class="iframe">
+      <iframe class="email-iframe" src="./NotificationEmail.html"></iframe>
+    </div>
+  </div>
+  <div class="html-email">
+    <div class="title">
+      <h2>Welcome Joining Email</h2>
+    </div>
+    <div class="iframe">
+      <iframe class="email-iframe" src="./JoiningEmail.html"></iframe>
+    </div>
+  </div>
+  <div class="html-email">
+    <div class="title">
+      <h2>Sales Report Email</h2>
+    </div>
+    <div class="iframe">
+      <iframe class="email-iframe" src="./SalesReport.html"></iframe>
+    </div>
+  </div>
+  <div class="html-email">
+    <div class="title">
+      <h2>Verification Email</h2>
+    </div>
+    <div class="iframe">
+      <iframe class="email-iframe" src="./VerificationEmail.html"></iframe>
+    </div>
+  </div>
+  <div class="html-email">
+    <div class="title">
+      <h2>Account Update Alert Email</h2>
+    </div>
+    <div class="iframe">
+      <iframe class="email-iframe" src="./AccountUpdateAlertEmail.html"></iframe>
+    </div>
+  </div>
+
+  <script>
+    // Adjust iframe height based on content for all iframes
+    const iframes = document.getElementsByClassName('email-iframe');
+
+    for (let i = 0; i < iframes.length; i++) {
+      iframes[i].addEventListener('load', () => {
+        try {
+          // Access each iframe's document and set height
+          const iframe = iframes[i];
+          iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        } catch (error) {
+          console.error("Unable to adjust iframe height:", error);
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
