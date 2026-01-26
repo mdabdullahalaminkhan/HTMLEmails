@@ -41,4 +41,4 @@ To view the templates:
 git clone https://github.com/mdabdullahalaminkhan/htmlemails.git
 cd htmlemails
 open index.html
-
+## Md Abdullah Al Amin Khan
